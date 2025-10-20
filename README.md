@@ -18,14 +18,13 @@
 
 ## 🚀 Быстрый запуск
 
-### 1. Клонировать репозиторий:
-  git clone https://github.com/bellatrisa1/todo-ts-react-vite.git
-  cd todo-app-react
+```bash
+# 1. Клонировать репозиторий:
+git clone https://github.com/bellatrisa1/todo-ts-react-vite.git
+cd todo-ts-react-vite
 
-### 2. Установить зависимости:
-  npm install
+# 2. Установить зависимости:
+npm install
 
-### 3. Запустить:
-  npm run dev
-
-Приложение будет доступно по адресу: http://localhost:5173/
+# 3. Запустить:
+npm run dev
