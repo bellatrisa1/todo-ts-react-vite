@@ -4,7 +4,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue)](https://typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-5.0-orange)](https://vitejs.dev)
 
-## 🔗 Demo: https://todo-ts-react-vite.vercel.app/
+### 🔗 Demo: https://todo-ts-react-vite.vercel.app/
 
 ## 🛠 Технологии
 
@@ -18,14 +18,14 @@
 
 ##🚀 Быстрый запуск
 
-# 1. Клонировать репозиторий:
-git clone https://github.com/bellatrisa1/todo-ts-react-vite.git
-cd todo-app-react
+### 1. Клонировать репозиторий:
+  git clone https://github.com/bellatrisa1/todo-ts-react-vite.git
+  cd todo-app-react
 
-# 2. Установить зависимости:
-npm install
+### 2. Установить зависимости:
+  npm install
 
-# 3. Запустить:
-npm run dev
+### 3. Запустить:
+  npm run dev
 
 Приложение будет доступно по адресу: http://localhost:5173/
