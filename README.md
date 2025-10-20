@@ -16,7 +16,7 @@
 - ESLint
 - React Router
 
-##🚀 Быстрый запуск
+## 🚀 Быстрый запуск
 
 ### 1. Клонировать репозиторий:
   git clone https://github.com/bellatrisa1/todo-ts-react-vite.git
