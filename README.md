@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# TO-DO Приложение (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современное React-приложение для управления задачами с акцентом на удобный интерфейс, аналитику и хороший пользовательский опыт.
 
-Currently, two official plugins are available:
+Проект начинался как базовый todo list, но в процессе был переработан в более зрелое и структурированное приложение уровня сильного пет-проекта.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Стек
 
-## React Compiler
+- [React](https://react.dev/) — построение интерфейса на основе компонентного подхода  
+- [TypeScript](https://www.typescriptlang.org/) — строгая типизация и контроль данных  
+- [Vite](https://vitejs.dev/) — современный инструмент сборки с быстрым HMR  
+- [React Hook Form](https://react-hook-form.com/) — эффективная работа с формами и валидацией  
+- [SCSS](https://sass-lang.com/) — модульная и масштабируемая стилизация  
+- [localStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) — персистентность данных и пользовательских настроек  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Возможности
 
-## Expanding the ESLint configuration
+- добавление новых задач
+- редактирование существующих задач
+- удаление задач
+- отметка задачи как выполненной
+- очистка выполненных задач
+- фильтрация по статусу: все / активные / завершённые
+- быстрые фильтры через аналитические карточки
+- поиск по задачам
+- сортировка по дате создания и приоритету
+- установка дедлайна
+- отображение статуса дедлайна:
+  - просрочено
+  - сегодня
+  - скоро
+  - запланировано
+- аналитические карточки по задачам:
+  - просроченные
+  - на сегодня
+  - высокий приоритет
+  - без дедлайна
+- сохранение задач в `localStorage`
+- сохранение пользовательских настроек интерфейса:
+  - выбранный фильтр
+  - быстрый фильтр
+  - сортировка
+  - поисковый запрос
+- toast-уведомления после действий
+- адаптивный интерфейс для desktop и mobile
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Установка и запуск:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Клонировать репозиторий:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+git clone <repository>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Установить зависимости
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+npm install
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. Запустить проект локально
+
+```
+npm run dev
+```
+
+4. Сборка версии:
+
+```
+npm run build
 ```
