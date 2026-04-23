@@ -6,6 +6,8 @@
 
 ---
 
+### 🔗 Demo: https://todo-ts-react-vite.vercel.app/
+
 ## Стек
 
 - [React](https://react.dev/) — построение интерфейса на основе компонентного подхода  
